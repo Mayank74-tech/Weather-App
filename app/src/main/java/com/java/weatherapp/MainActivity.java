@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getWeatherData(String cityName) {
-        Call<WeatherApp> call = service.getWeather(cityName, "f42591c721a300a2e67cc3ddb1b095b1", "metric");
+        Call<WeatherApp> call = service.getWeather(cityName, "Your_API_Key", "metric");
 
         call.enqueue(new Callback<WeatherApp>() {
             @Override
